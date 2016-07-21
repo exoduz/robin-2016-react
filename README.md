@@ -11,4 +11,3 @@ Practice my ReactJS
 ## Learnt ##
 - ReactJS
 - Webpack
-- Gulp
