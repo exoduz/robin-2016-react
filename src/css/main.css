@@ -2,7 +2,7 @@
  * Robin Website v1.0.0 (https://robinjulius.com)
  */
 @charset "utf-8";
-@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,400';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400';
 
 html, body {
 	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,23 +23,36 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
   align-items: center;
   text-align: center;
 }
-#hero div { margin-top: -80px; }
+#hero .main-section { margin-top: -80px; }
 
 #hero h1 {
 	margin: 0 0 8px;
-	font-size: 3rem;
+	font-size: 3.2rem;
 	font-weight: 100;
 	text-transform: uppercase;
 }
 
+#hero .skills-and-interests { margin: 8px 0 25px; }
 #hero h2 {
-	margin: 8px 0 25px;
-	font-weight: 200;
+	display: inline;
+	font-weight: 300;
 }
-#hero h2 span { margin-right: 50px; }
-	#hero h2 span:last-child { margin-right: 0; }
+	#hero h2::after {
+		content: "";
+		margin-right: 50px;
+	}
+	#hero h2:last-child::after { content: ""; margin-right: 0; }
 
 #hero .more a { margin-right: 30px; }
+
+#social-icons {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+}
+#social-icons a { color: #06274b; margin-right: 30px; }
+	#social-icons a:hover, #social-icons a:focus { color: #2980b9; }
+	#social-icons a:last-child { margin: 0; }
 
 .scroll-for-more {
 	position: absolute;
