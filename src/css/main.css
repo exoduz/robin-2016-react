@@ -15,6 +15,9 @@ a:hover, a:focus { color: #54aff0; text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 { color: #06274b; }
 
+/**
+	Hero
+*/
 #hero {
   width: 100%;
   height: 100vh;
@@ -32,27 +35,43 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 	text-transform: uppercase;
 }
 
-#hero .skills-and-interests { margin: 8px 0 25px; }
+#hero .specialty { margin: 8px 0 25px; }
 #hero h2 {
 	display: inline;
+	font-size: 1.4rem;
 	font-weight: 300;
 }
 	#hero h2::after {
 		content: "";
-		margin-right: 50px;
+		margin-right: 70px;
 	}
 	#hero h2:last-child::after { content: ""; margin-right: 0; }
 
-#hero .more a { margin-right: 30px; }
+#hero .links a { margin-right: 30px; }
 
-#social-icons {
+@media (min-width: 768px) and (max-width: 991px) {
+	#hero h1 { font-size: 2.8rem; }
+	#hero h2 { font-size: 1.3rem; }
+	#hero h2::after { content: ""; margin-right: 40px; }
+}
+
+@media (max-width: 767px) {
+	#hero { padding: 10px; }
+	#hero h1 { margin-bottom: 25px; font-size: 1.6rem; }
+	#hero h2 { display: block; font-size: 1rem; margin-top: 10px; }
+	#hero h2::after { content: ""; margin-right: 0; }
+
+	#hero .links a { display: block; margin-right: 0; font-size: 0.8rem; }
+}
+
+#social {
 	position: absolute;
 	top: 15px;
 	right: 25px;
 }
-#social-icons a { color: #06274b; margin-right: 25px; }
-	#social-icons a:hover, #social-icons a:focus { color: #2980b9; }
-	#social-icons a:last-child { margin: 0; }
+#social a { color: #06274b; margin-right: 25px; }
+	#social a:hover, #social a:focus { color: #2980b9; }
+	#social a:last-child { margin: 0; }
 
 .scroll-for-more {
 	position: absolute;
@@ -61,6 +80,15 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 }
 .scroll-for-more i { margin-right: 12px; }
 
+@media (max-width: 767px) {
+	#social a { margin-right: 15px; }
+
+	.scroll-for-more { font-size: 0.6rem; }
+}
+
+/**
+	Not Found (404)
+*/
 #not-found {
   width: 100%;
   height: 100vh;

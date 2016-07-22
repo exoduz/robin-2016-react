@@ -7,19 +7,20 @@ class Hero extends React.Component {
 				<div className="main-section">
 					<h1>Robin Roy Julius</h1>
 					
-					<div className="skills-and-interests">
+					<div className="specialty">
 						<h2>UI / UX</h2>
 						<h2>Front End</h2>
 						<h2>Full Stack</h2>
 						<h2>Minimalist</h2>
-					</div>
-					<p className="more">
+					</div>{/* #specialty */}
+
+					<p className="links">
 						<a href="#">What I have worked on</a>
 						<a href="#">What I can do</a>
 						<a href="#">Say hi</a>
-					</p>
+					</p>{/* .links */}
 
-					<div id="social-icons">
+					<div id="social">
 						<a href="https://linkedin.com/in/robinjulius" target="_blank">
 							<i className="fa fa-linkedin"></i>
 						</a>
@@ -32,7 +33,7 @@ class Hero extends React.Component {
 						<a href="https://instagram.com/exo_duz" target="_blank">
 							<i className="fa fa-instagram"></i>
 						</a>
-					</div>{/* #social-icons */}
+					</div>{/* #social */}
 				</div>
 
 				<div className="scroll-for-more">
