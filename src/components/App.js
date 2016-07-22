@@ -26,14 +26,14 @@ require('../css/print.css');
 /**
  React components
 */
+import Hero from './Hero/Hero';
 
 
 class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<button className="btn btn-success">Hello</button>
-				<i className="fa fa-github"></i>
+				<Hero />
 			</div>
 		)
 	}

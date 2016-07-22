@@ -44,6 +44,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --colors . --history-api-fallback --content-base build/",
+    "check": "webpack-dev-server --display-errors",
     "build": "webpack -p --progress"
   },
   "license": "ISC"
