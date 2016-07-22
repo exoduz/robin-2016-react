@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 	top: 15px;
 	right: 25px;
 }
-#social-icons a { color: #06274b; margin-right: 30px; }
+#social-icons a { color: #06274b; margin-right: 25px; }
 	#social-icons a:hover, #social-icons a:focus { color: #2980b9; }
 	#social-icons a:last-child { margin: 0; }
 
