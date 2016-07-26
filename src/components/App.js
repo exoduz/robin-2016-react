@@ -27,6 +27,9 @@ require('../css/print.css');
  React components
 */
 import Hero from './Hero/Hero';
+import MapContainer from './Map/MapContainer';
+import Thanks from './Thanks/Thanks';
+import Footer from './Layout/Footer';
 
 
 class App extends React.Component {
@@ -34,6 +37,9 @@ class App extends React.Component {
 		return (
 			<div>
 				<Hero />
+				<MapContainer />
+				<Thanks />
+				<Footer />
 			</div>
 		)
 	}

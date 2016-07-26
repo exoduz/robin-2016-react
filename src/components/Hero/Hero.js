@@ -9,7 +9,6 @@ class Hero extends React.Component {
 					
 					<div className="specialty">
 						<h2>UI / UX</h2>
-						<h2>Front End</h2>
 						<h2>Full Stack</h2>
 						<h2>Minimalist</h2>
 					</div>{/* #specialty */}
