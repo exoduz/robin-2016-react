@@ -8,7 +8,7 @@ class Footer extends React.Component {
 	render() {
 		var currentYear = this._getCurrentYear();
 		return (
-			<footer>
+			<footer className="divider divider-before">
 				<div className="container">
 					copyright &copy; { currentYear === 2016 ? currentYear : `2016 - ${ currentYear }` } robin roy julius
 				</div>{/* .container */}

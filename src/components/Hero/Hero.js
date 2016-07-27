@@ -13,10 +13,10 @@ class Hero extends React.Component {
 						<h2>Minimalist</h2>
 					</div>{/* #specialty */}
 
-					<p className="links">
-						<a href="#">What I have worked on</a>
-						<a href="#">What I can do</a>
-						<a href="#">Say hi</a>
+					<p className="links divider divider-before">
+						<a href="#projects">What I have worked on</a>
+						<a href="#skills">What I can do</a>
+						<a href="#contact">Say hi</a>
 					</p>{/* .links */}
 
 					<div id="social">
@@ -36,7 +36,7 @@ class Hero extends React.Component {
 				</div>
 
 				<div className="scroll-for-more">
-					<a href="#"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
+					<a href="#projects"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
 				</div>{/* .scroll-for-more */}
 			</section>
 		)
