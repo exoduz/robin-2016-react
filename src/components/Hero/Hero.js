@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Social from './Social';
+
 class Hero extends React.Component {
 	render() {
 		return (
@@ -19,21 +21,8 @@ class Hero extends React.Component {
 						<a href="#contact">Say hi</a>
 					</p>{/* .links */}
 
-					<div id="social">
-						<a href="https://linkedin.com/in/robinjulius" target="_blank">
-							<i className="fa fa-linkedin"></i>
-						</a>
-						<a href="https://github.com/exoduz" target="_blank">
-							<i className="fa fa-github"></i>
-						</a>
-						<a href="https://twitter.com/exo_duz" target="_blank">
-							<i className="fa fa-twitter"></i>
-						</a>
-						<a href="https://instagram.com/exo_duz" target="_blank">
-							<i className="fa fa-instagram"></i>
-						</a>
-					</div>{/* #social */}
-				</div>
+					<Social />
+				</div>{/* .main-section */}
 
 				<div className="scroll-for-more">
 					<a href="#projects"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
