@@ -111,75 +111,73 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 #projects { padding: 50px 0; }
 
 .project-item { padding: 30px 0; }
-.project-item .image img { max-height: 400px; margin-left: -250px; }
+.project-item .image img { height: 400px; }
 .project-item .text { padding-top: 100px; }
+.project-item .divider-after::after { content: ""; margin: 30px auto 0; }
 
 .project-item.right .image img {
-	max-height: 400px;
+	height: 400px;
+	margin: 0;
 	margin-left: 0;
-	margin-right: -250px;
 }
-.project-item#collectstor-app .image img { max-height: 570px; }
-.project-item#collectstor-app .text { padding-left: 170px; }
 
-.project-item .project-logo, .project-item .app-icon { margin-bottom: 20px; }
+.row-grey {
+	margin: 30px 0;
+	overflow: hidden;
+	background: #fafafa;
+}
+.row-grey .project-item { padding: 0 0 55px; }
+
+.project-item#collectstor-website .image img { margin-left: -250px; }
+.project-item#collectstor-app .image img { height: 500px; }
+.project-item#collectstor-app .text { padding-left: 80px; }
+.project-item#last-cigarette-app .image img { height: 580px; margin-top: -120px; margin-left: 50px; }
+.project-item#last-cigarette-app .text { padding-left: 30px; }
+
+.project-item .project-logo,
+.project-item .app-icon {
+	margin-bottom: 20px;
+}
 .project-item #collectstor-logo.project-logo { max-height: 50px; }
-.project-item #collectstor-app-icon.app-icon { max-height: 100px; border-radius: 15px; }
+.project-item .app-icon { height: 100px; border-radius: 15px; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.project-item#collectstor-app .image img { height: 450px; }
+	.project-item#collectstor-app .text { padding-left: 30px; }
+	.project-item#last-cigarette-app .image img { margin-left: 0; }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.project-item .image img { max-height: 300px; }
+	.project-item .image img { height: 300px; }
 	.project-item .text { padding-top: 50px; }
-	.project-item#collectstor-app .image img { max-height: 400px; margin-left: 0; margin-right: 0; }
+	.project-item#collectstor-app .image img { height: 350px; }
 	.project-item#collectstor-app .text { padding-left: 30px; }
+	.project-item#last-cigarette-app .image img {
+		height: 440px;
+		margin-top: -50px;
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 767px) {
-	.project-item .image img { width: 100%; height: auto; margin: 0; }
+	.row-grey .project-item { padding: 35px 0; }
+
+	.project-item .image img {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+	}
 	.project-item .text { padding-top: 30px; }
 	.project-item#collectstor-app .text { padding-left: 15px; }
-}
+	.project-item#last-cigarette-app .image { text-align: center; }
+	.project-item#last-cigarette-app .image img { width: 200px !important; } /* overwrite so that last cigarette image height is not too tall */
 
-/*
-.project-item { padding: 30px 0; }
-.project-item .image { float: left; width: 40%; margin-left: -200px; }
-.project-item .image img { max-height: 400px; }
-.project-item .text {
-	float: right;
-	width: 60%;
-	margin-top: 100px;
-}
-
-.project-item.right .image { float: right; margin-right: -200px; }
-.project-item.right .text {
-	float: left;
-	width: 500px;
-	margin-top: 100px;
-}
-.project-item#collectstor-app .image img { max-height: 600px; }
-.project-item#collectstor-app .text { margin-left: 200px; }
-
-.project-item .project-logo, .project-item .app-icon { margin-bottom: 20px; }
-.project-item #collectstor-logo.project-logo { max-height: 50px; }
-
-.project-item #collectstor-app-icon.app-icon { max-height: 100px; border-radius: 15px; }
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.project-item .image img { max-height: 270px; }
-	.project-item#collectstor-app .image img { max-height: 350px; }
-	.project-item .text { width: 420px; margin-top: 40px; }
-	.project-item#collectstor-app .text { margin-left: 50px; }
-}
-
-@media (max-width: 767px) {
-	.project-item .image, .project-item .text {
-		display: inline-block;
-		width: auto;
-		height: auto;
-		margin: 0;
+	.project-item .project-logo,
+	.project-item .app-icon {
+		margin-bottom: 20px;
 	}
-	.project-item .image { margin-bottom: 30px; }
 }
-*/
+
 /**
 	Map
 */

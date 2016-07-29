@@ -27,19 +27,19 @@ module.exports = validate({
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
       {
       	test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-      	loader: 'url?limit=10000&mimetype=application/font-woff&name=/build/fonts/[name].[ext]'
+      	loader: 'url?limit=10000&mimetype=application/font-woff&name=/fonts/[name].[ext]'
       },
       {
       	test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-      	loader: 'url?limit=10000&mimetype=application/octet-streamf&name=/build/fonts/[name].[ext]'
+      	loader: 'url?limit=10000&mimetype=application/octet-streamf&name=/fonts/[name].[ext]'
       },
       {
       	test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-      	loader: 'url?limit=65000&mimetype=application/octet-stream&name=/build/fonts/[name].[ext]'
+      	loader: 'url?limit=65000&mimetype=application/octet-stream&name=/fonts/[name].[ext]'
     	},
       {
       	test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-      	loader: 'url?limit=10000&mimetype=image/svg+xml&name=/build/fonts/[name].[ext]'
+      	loader: 'url?limit=10000&mimetype=image/svg+xml&name=/fonts/[name].[ext]'
     	}
     ]
   },

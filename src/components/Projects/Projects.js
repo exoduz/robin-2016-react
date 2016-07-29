@@ -11,7 +11,7 @@ class Projects extends React.Component {
 								<img src="assets/img/collectstor-website-macbook-silver.png" alt="Collectstor website" />
 							</div>{/* .col-sm-5 */}
 
-							<div className="col-sm-7 text">
+							<div className="col-sm-7 text divider-after">
 								<img src="assets/img/collectstor-logo-inline.png" alt="Collectstor logo" id="collectstor-logo" className="img-responsive project-logo" />
 								<p>Collectstor is a platform for collectors of all things to socialize, explore, and showcase their own collections.</p>
 								<p>
@@ -19,15 +19,15 @@ class Projects extends React.Component {
 								</p>
 							</div>{/* .col-sm-7 */}
 						</div>{/* .project-item .left */}
-					</div>
+					</div>{/* .row */}
 
 					<div className="row">
 						<div id="collectstor-app" className="project-item right clearfix">
-							<div className="col-sm-5 col-sm-push-7 image">
+							<div className="col-sm-6 col-sm-push-6 image">
 								<img src="assets/img/collectstor-app-iphone6s.png" alt="Collectstor iOS app" />
-							</div>{/* .col-sm-5 */}
+							</div>{/* .col-sm-6 .col-sm-push-6 */}
 
-							<div className="col-sm-7 col-sm-pull-5 text">
+							<div className="col-sm-6 col-sm-pull-6 text divider-after">
 								<img src="assets/img/collectstor-app-icon.png" alt="Collectstor app icon" id="collectstor-app-icon" className="img-responsive app-icon" />
 								<p>
 									The Collectstor iPhone app is also available.<br />
@@ -36,41 +36,31 @@ class Projects extends React.Component {
 								<p>
 									<a href="https://itunes.apple.com/us/app/collectstor-showcasing-collections/id1044554718" target="_blank">Download on the App Store <i className="fa fa-apple"></i></a>
 								</p>
-							</div>{/* .col-sm-7 */}
+							</div>{/* .col-sm-6 .col-sm-pull-6 */}
 						</div>{/* .project-item .left */}
-					</div>
+					</div>{/* .row */}
+				</div>{/* .container */}
 
-					{/*}
-					<div id="collectstor-website" className="project-item left clearfix">
-						<div className="image">
-							<img src="assets/img/collectstor-website-macbook-silver.png" alt="Collectstor website" className="img-responsive" />
-						</div>
-						<div className="text">
-							<img src="assets/img/collectstor-logo-inline.png" alt="Collectstor logo" id="collectstor-logo" className="img-responsive project-logo" />
-							<p>Collectstor is a platform for collectors of all things to socialize, explore, and showcase their own collections.</p>
-							<p>
-								<a href="https://collectstor.com" target="_blank">Visit website and start showcasing</a>
-							</p>
-						</div>
-					</div>{/* .project-item */}
-					{/*
-					<div id="collectstor-app" className="project-item right clearfix">
-						<div className="image">
-							<img src="assets/img/collectstor-app-iphone6s.png" alt="Collectstor iOS app" className="img-responsive" />
-						</div>
-						<div className="text">
-							<img src="assets/img/collectstor-app-icon.png" alt="Collectstor app icon" id="collectstor-app-icon" className="img-responsive app-icon" />
-							<p>
-								The Collectstor iPhone app is also available.<br />
-								Now you can showcase and share collections on the go.
-							</p>
-							<p>
-								<a href="https://itunes.apple.com/us/app/collectstor-showcasing-collections/id1044554718" target="_blank">Download on the App Store <i className="fa fa-apple"></i></a>
-							</p>
-						</div>
-					</div>{/* .project-item */}
+				<div className="row-grey">
+					<div className="container">
+						<div className="row">
+							<div id="last-cigarette-app" className="project-item left clearfix">
+								<div className="col-sm-4 image">
+									<img src="assets/img/last-cigarette-app-iphone6s.png" alt="Last Cigarette iOS app" />
+								</div>{/* .col-sm-5 */}
 
-				</div>
+								<div className="col-sm-8 text divider-after">
+									<img src="assets/img/last-cigarette-app-icon.png" alt="Last Cigarette app icon" id="last-cigarette-app-icon" className="img-responsive app-icon" />
+									<p>A simple counter to track the time you last quit smoking. It shows information such as the duration, money saved and cigarettes not smoked.</p>
+									<p>
+										<a href="https://itunes.apple.com/us/app/last-cigarette/id1088134074" target="_blank">Download on the App Store <i className="fa fa-apple"></i></a><br />
+										<a href="https://github.com/exoduz/last-cigarette" target="_blank">Download source on Github <i className="fa fa-github"></i></a>
+									</p>
+								</div>{/* .col-sm-7 */}
+							</div>{/* .project-item .left */}
+						</div>{/* .row */}
+					</div>{/* .container */}
+				</div>{/* .row-grey */}
 			</section>
 		)
 	}
