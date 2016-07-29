@@ -2,18 +2,28 @@
  * Robin Website v2.0.0 (https://robinjulius.com)
  */
 @charset "utf-8";
-@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700';
 
 html, body {
 	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
   font-weight: 400;
+  color: #333;
 }
 
 a { color: #2980b9; }
 a:hover, a:focus { color: #54aff0; text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 { color: #06274b; }
+
+h2.section-heading {
+	margin: 35px 0;
+	color: rgba(6, 39, 75, 0.55);
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
 	h2 { font-size: 1.3rem; }
@@ -46,7 +56,6 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
   align-items: center;
   text-align: center;
 }
-#hero .main-section { }
 
 #hero h1 {
 	margin: 0 0 8px;
@@ -108,7 +117,7 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 /**
 	Projects
 */
-#projects { padding: 50px 0; }
+#projects { padding: 30px 0 0; }
 
 .project-item { padding: 30px 0; }
 .project-item .image img { height: 400px; }
@@ -177,6 +186,11 @@ h1, h2, h3, h4, h5, h6 { color: #06274b; }
 		margin-bottom: 20px;
 	}
 }
+
+/**
+	Resume
+*/
+#resume { padding: 30px 0 0; }
 
 /**
 	Map

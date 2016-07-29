@@ -1,9 +1,13 @@
 import React from 'react';
 
+import PersonalProjects from './PersonalProjects'
+
 class Projects extends React.Component {
 	render() {
 		return (
 			<section id="projects">
+				<h2 className="section-heading divider-after">What I have worked on</h2>
+
 				<div className="container">
 					<div className="row">
 						<div id="collectstor-website" className="project-item left clearfix">
@@ -60,6 +64,8 @@ class Projects extends React.Component {
 							</div>{/* .project-item .left */}
 						</div>{/* .row */}
 					</div>{/* .container */}
+
+					<PersonalProjects />
 				</div>{/* .row-grey */}
 			</section>
 		)

@@ -6,7 +6,7 @@ class Hero extends React.Component {
 	render() {
 		return (
 			<section id="hero">
-				<div className="main-section">
+				<div>
 					<h1>Robin Roy Julius</h1>
 					
 					<div className="specialty">
@@ -17,12 +17,12 @@ class Hero extends React.Component {
 
 					<p className="links divider divider-before">
 						<a href="#projects">What I have worked on</a>
-						<a href="#skills">What I can do</a>
+						<a href="#resume">What I can do</a>
 						<a href="#contact">Say hi</a>
 					</p>{/* .links */}
 
 					<Social />
-				</div>{/* .main-section */}
+				</div>
 
 				<div className="scroll-for-more">
 					<a href="#projects"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
