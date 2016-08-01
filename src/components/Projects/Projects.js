@@ -49,18 +49,18 @@ class Projects extends React.Component {
 					<div className="container">
 						<div className="row">
 							<div id="last-cigarette-app" className="project-item left clearfix">
-								<div className="col-sm-4 image">
-									<img src="assets/img/last-cigarette-app-iphone6s.png" alt="Last Cigarette iOS app" />
-								</div>{/* .col-sm-5 */}
+								<div className="col-sm-6 image">
+									<img src="assets/img/last-cigarette-app-iphone6s-angled.png" alt="Last Cigarette iOS app" />
+								</div>{/* .col-sm-6 */}
 
-								<div className="col-sm-8 text divider-after">
+								<div className="col-sm-6 text divider-after">
 									<img src="assets/img/last-cigarette-app-icon.png" alt="Last Cigarette app icon" id="last-cigarette-app-icon" className="img-responsive app-icon" />
 									<p>A simple counter to track the time you last quit smoking. It shows information such as the duration, money saved and cigarettes not smoked.</p>
 									<p>
 										<a href="https://itunes.apple.com/us/app/last-cigarette/id1088134074" target="_blank">Download on the App Store <i className="fa fa-apple"></i></a><br />
 										<a href="https://github.com/exoduz/last-cigarette" target="_blank">Download source on Github <i className="fa fa-github"></i></a>
 									</p>
-								</div>{/* .col-sm-7 */}
+								</div>{/* .col-sm-6 */}
 							</div>{/* .project-item .left */}
 						</div>{/* .row */}
 					</div>{/* .container */}
