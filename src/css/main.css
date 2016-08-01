@@ -140,7 +140,11 @@ h2.section-heading {
 .project-item#collectstor-website .image img { margin-left: -250px; }
 .project-item#collectstor-app .image img { height: 500px; }
 .project-item#collectstor-app .text { padding-left: 80px; }
-.project-item#last-cigarette-app .image img { height: 400px; margin-top: 20px; margin-left: -100px; }
+.project-item#last-cigarette-app .image img {
+	height: 400px;
+	margin-top: 50px;
+	margin-left: -120px;
+}
 
 .project-item .project-logo,
 .project-item .app-icon {
@@ -186,6 +190,20 @@ h2.section-heading {
 	.project-item .app-icon {
 		margin-bottom: 20px;
 	}
+}
+
+/**
+	Personal Projects
+*/
+#personal-projects { padding-top: 30px; padding-bottom: 30px; }
+.card {}
+.card h3 { font-size: 1rem; }
+.card p { font-size: 0.9rem; }
+
+.project-icon { width: 60px; border-radius: 10px; }
+
+@media (max-width: 767px) {
+	.card { margin-bottom: 40px; }
 }
 
 /**

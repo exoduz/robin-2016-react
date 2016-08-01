@@ -64,9 +64,9 @@ class Projects extends React.Component {
 							</div>{/* .project-item .left */}
 						</div>{/* .row */}
 					</div>{/* .container */}
-
-					<PersonalProjects />
 				</div>{/* .row-grey */}
+
+				<PersonalProjects />
 			</section>
 		)
 	}
