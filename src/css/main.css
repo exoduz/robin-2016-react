@@ -201,6 +201,15 @@ h2.section-heading {
 .card p { font-size: 0.9rem; }
 
 .project-icon { width: 60px; border-radius: 10px; }
+.coding-language-container { margin-bottom: 25px; }
+.coding-language {
+	margin-right: 12px;
+	padding: 2px 8px;
+	background: #d5e6f6;
+	border-radius: 4px;
+	color: #777;
+}
+	.coding-language:last-child { margin-right: 0; }
 
 @media (max-width: 767px) {
 	.card { margin-bottom: 40px; }
