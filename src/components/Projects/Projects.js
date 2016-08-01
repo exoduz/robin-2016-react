@@ -28,7 +28,7 @@ class Projects extends React.Component {
 					<div className="row">
 						<div id="collectstor-app" className="project-item right clearfix">
 							<div className="col-sm-6 col-sm-push-6 image">
-								<img src="assets/img/collectstor-app-iphone6s.png" alt="Collectstor iOS app" />
+								<img src="assets/img/collectstor-app-iphone6s-45degrees.png" alt="Collectstor iOS app" />
 							</div>{/* .col-sm-6 .col-sm-push-6 */}
 
 							<div className="col-sm-6 col-sm-pull-6 text divider-after">
