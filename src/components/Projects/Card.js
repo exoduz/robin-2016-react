@@ -54,7 +54,6 @@ class Card extends React.Component {
 	}	
 
 	render() {
-		console.log(this.props.data);
 		const { image, title, description, codingLanguage, links  } = this.props.data;
 		
 		return(

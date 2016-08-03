@@ -7,8 +7,8 @@ class PersonalProjects extends React.Component {
 		super(props);
 	}
 
-	_data() {
-		const data = {
+	_content() {
+		const projects = {
 			project1: {
 				image: "assets/img/robinjulius-2016-project-icon.png",
 				title: "Robin's Website (mid 2016)",
@@ -72,17 +72,17 @@ class PersonalProjects extends React.Component {
 			}
 		}
 
-		return data;
+		return projects;
 	}
 
 	render() {
-		const data = this._data();
+		const content = this._content();
 
 		return(
 			<section id="personal-projects">
 				<div className="container">
 					<div className="row">
-						{ Object.keys(data).map((entry) => <Card key={ entry } data={ data[entry] } />) }
+						{ Object.keys(content).map((entry) => <Card key={ entry } data={ content[entry] } />) }
 					</div>{/* .row */}
 				</div>{/* .container */}
 			</section>
