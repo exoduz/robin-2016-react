@@ -1,5 +1,8 @@
 $(document).ready(() => {
-	const $toggleResume = $(".click-me");
+	const $toggleResume = $(".click-me"),
+		$resumeDescription = $('.resume-description');
+
+	$resumeDescription.hide(); //hide resume description on first load
 
 	$toggleResume.on("click", function(e) {
 		const clickedButton = $(this);
@@ -7,7 +10,11 @@ $(document).ready(() => {
 
 		clickedButton.next("div.resume-description").slideToggle("slow", function(e) { //toggle
 			//toggle complete
-			buttonText.toLowerCase() === "more" ? clickedButton.text("less") : clickedButton.text("more");
+			if ($(this).is(':hidden')) { //description closed
+				clickedButton.text("more");
+			} else {
+				clickedButton.text("less");
+			}
 		});
 	})
 });

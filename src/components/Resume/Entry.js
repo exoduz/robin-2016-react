@@ -20,7 +20,7 @@ class Entry extends React.Component {
 					</div>{/* .resume-date */}
 				</div>{/* .row */}
 				<div className="row">
-					<div className="click-me" onClick={ this._toggleDescription.bind(this) }>More</div>
+					<div className="click-me" onClick={ this._toggleDescription.bind(this) }>more</div>
 					<div className="col-sm-8 col-sm-push-2 resume-description">
 						{ description ? description.map((desc, index) => <p key={ index }>{ desc }</p>) : '' }
 					</div>{/* .resume-description */}
