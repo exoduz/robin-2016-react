@@ -9,7 +9,7 @@ class Resume extends React.Component {
 				company: 'Collectstor',
 				role: 'Founder and Full Stack Developer',
 				location: 'Tokyo, Japan and Perth, Australia',
-				desc: [
+				description: [
             'Founded Collectstor – a website where collectors can showcase and share their collections.',
             'Coded the website which includes user registration, profile information, news feed and upload using a LAMP stack and jQuery.',
             'Honed entrepreneurial skills by marketing, distributing advertising at events and shops throughout Perth and the US.',
@@ -21,7 +21,7 @@ class Resume extends React.Component {
 				company: 'Australian Embassy, Tokyo',
 				role: 'Electronic Media Administrator',
 				location: 'Tokyo, Japan and Perth, Australia',
-				desc: [
+				description: [
             'Developed several in-house CMS, an event management and booking CMS, which included an invitation, RSVP, and check in system for the Embassy’s biggest yearly event. Projects were done in a LAMP stack and jQuery.',
             'Managed requirements and projects for the Embassy and other Government agencies and stakeholders.',
             'Successfully internationalised, updated and made responsive all Embassy and stakeholders’ website, converted all static pages to dynamic using LAMP stack. Other duties included Linux server maintenance and official photographer.',
@@ -32,7 +32,7 @@ class Resume extends React.Component {
 				company: 'IT Vision',
 				role: 'Web and Software Developer',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
             'Successful integration of a web component using HTML, XSL and C# into their in-house CRM system which uses IBM UniVerse and Java.',
             'Gave a web developer’s perspective to the company’s CRM, which helped improve the fluency of the project timeline.',
           ],
@@ -42,7 +42,7 @@ class Resume extends React.Component {
 				company: 'HomeTrader',
 				role: 'Web Developer and Project Manager',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
             'Managed and coded newsletters, web related content and new projects, as well as an intranet system for web projects in ASP.NET and MS SQL Server.',
           ],
         date: 'March 2006 - October 2006'
@@ -51,7 +51,7 @@ class Resume extends React.Component {
 				company: 'Itomic',
 				role: 'Full Stack Web Developer',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
             'Worked on the clients’ needs analysis, design, implementation and timely deployment of the project individually and i',
             'Project manager or team lead on several projects.',
             'Website projects done in PHP, MySQL and JavaScript. Maintained LAMP server. ',
@@ -63,7 +63,7 @@ class Resume extends React.Component {
 				company: 'Omegatrend International',
 				role: 'HTML and Javascript Programmer (Contract Position)',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
             'Coded HTML and JavaScript pages for their Global Expansion Program into Hong Kong, the Philippines, the USA, the UK, South Africa and Brunei.',
           ],
         date: 'December 2004'
@@ -72,7 +72,7 @@ class Resume extends React.Component {
 				company: 'Precise IT Solutions',
 				role: 'Web Developer and Program Analyst',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
             'Analyzed, designed, and implemented websites for clients in PHP and ASP, based on extensive research of customer needs and specifications. Also managed end-to-end server setup, deployment and support.',
             'Proposed and led effort creating a successful online shop, transitioning from IT only to a complete e-business solution.',
           ],
@@ -82,7 +82,7 @@ class Resume extends React.Component {
 				company: 'Speedworks Motorsports',
 				role: 'Database Administrator, Sales Rep and Pit Crew',
 				location: 'Perth, Australia',
-				desc: [
+				description: [
 						'Successfully created, implemented and maintained a stock and products database.',
           ],
         date: 'January 1999 - January 2002'
@@ -99,7 +99,9 @@ class Resume extends React.Component {
 			<section id="resume">
 				<h2 className="section-heading divider-after">What I can do</h2>
 
-				{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
+				<div className="container">
+					{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
+				</div>{/* .container */}
 			</section>
 		)
 	}
