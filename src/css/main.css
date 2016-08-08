@@ -92,16 +92,6 @@ h2.section-heading {
 	#hero .links a { display: block; margin-right: 0; font-size: 1rem; }
 }
 
-#social {
-	position: absolute;
-	top: 15px;
-	right: 25px;
-	font-size: 1.15rem;
-}
-#social a { color: #06274b; margin-right: 25px; }
-	#social a:hover, #social a:focus { color: #2980b9; }
-	#social a:last-child { margin: 0; }
-
 .scroll-for-more {
 	position: absolute;
 	bottom: 25px;
@@ -218,7 +208,23 @@ h2.section-heading {
 /**
 	Resume
 */
-#resume { padding: 30px 0 0; }
+#resume { padding: 30px 0; }
+
+/**
+	Contact
+*/
+#contact { padding: 30px 0 90px; }
+.contact-email {
+	margin-bottom: 40px;
+	font-size: 3.5rem;
+	font-weight: 100;
+	text-align: center;
+}
+
+#social { font-size: 1.5rem; text-align: center; }
+#social a { color: #06274b; margin-right: 25px; }
+	#social a:hover, #social a:focus { color: #2980b9; }
+	#social a:last-child { margin: 0; }
 
 /**
 	Map

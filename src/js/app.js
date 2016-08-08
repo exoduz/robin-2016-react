@@ -6,9 +6,8 @@ $(document).ready(() => {
 
 	$toggleResume.on("click", function(e) {
 		const clickedButton = $(this);
-		var buttonText = clickedButton.text();
 
-		clickedButton.next("div.resume-description").slideToggle("slow", function(e) { //toggle
+		clickedButton.next($resumeDescription).slideToggle("slow", function(e) { //toggle
 			//toggle complete
 			if ($(this).is(':hidden')) { //description closed
 				clickedButton.text("more");

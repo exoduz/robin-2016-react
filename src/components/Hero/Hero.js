@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Social from './Social';
-
 class Hero extends React.Component {
 	render() {
 		return (
@@ -20,8 +18,6 @@ class Hero extends React.Component {
 						<a href="#resume">What I can do</a>
 						<a href="#contact">Say hi</a>
 					</p>{/* .links */}
-
-					<Social />
 				</div>
 
 				<div className="scroll-for-more">
