@@ -4,6 +4,7 @@ class Social extends React.Component {
 	render() {
 		return (
 			<div id="social">
+				<p>Some other ways to reach me...</p>
 				<a href="https://linkedin.com/in/robinjulius" target="_blank">
 					<i className="fa fa-linkedin"></i>
 				</a>

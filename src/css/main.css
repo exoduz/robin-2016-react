@@ -221,10 +221,16 @@ h2.section-heading {
 	text-align: center;
 }
 
-#social { font-size: 1.5rem; text-align: center; }
-#social a { color: #06274b; margin-right: 25px; }
+#social { text-align: center; }
+#social p { font-size: 0.8rem; font-weight: 700; }
+#social a { color: #06274b; font-size: 1.8rem; margin-right: 35px; }
 	#social a:hover, #social a:focus { color: #2980b9; }
 	#social a:last-child { margin: 0; }
+
+@media (max-width: 767px) {
+	.contact-email { font-size: 1.8rem; }
+	#social a { font-size: 1.5rem; }
+}
 
 /**
 	Map
