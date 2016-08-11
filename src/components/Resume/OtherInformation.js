@@ -33,64 +33,62 @@ class OtherInformation extends React.Component {
 
 		return (
 			<section id="other-info">
-				<div className="container">
-					<div className="row">
-						<div className="col-sm-4">
-							<h3>Languages</h3>
-							{ Object.keys(content.languages).map((id) => <ProgressBar key={ id } data={ content.languages[id] } />) }
-						</div>{/* .col-sm-4 */}
+				<div className="row">
+					<div className="col-sm-4">
+						<h3>Languages</h3>
+						{ Object.keys(content.languages).map((id) => <ProgressBar key={ id } data={ content.languages[id] } />) }
+					</div>{/* .col-sm-4 */}
 
-						<div className="col-sm-4">
-							<h3>Operating Systems</h3>
-							{ Object.keys(content.os).map((id) => <ProgressBar key={ id } data={ content.os[id] } />) }
-						</div>{/* .col-sm-4 */}
+					<div className="col-sm-4">
+						<h3>Operating Systems</h3>
+						{ Object.keys(content.os).map((id) => <ProgressBar key={ id } data={ content.os[id] } />) }
+					</div>{/* .col-sm-4 */}
 
-						<div className="col-sm-4">
-							<h3>Software</h3>
-							{ Object.keys(content.software).map((id) => <ProgressBar key={ id } data={ content.software[id] } />) }
-						</div>{/* .col-sm-4 */}
-					</div>{/* .row */}
+					<div className="col-sm-4">
+						<h3>Software</h3>
+						{ Object.keys(content.software).map((id) => <ProgressBar key={ id } data={ content.software[id] } />) }
+					</div>{/* .col-sm-4 */}
+				</div>{/* .row */}
 
-					<div id="volunteer-certs" className="row">
-						<div className="col-sm-3">
-		          <h3>Volunteer History</h3>
-	            
-	            <h4>TEDxPerth</h4>
-	            <p>
-	              Nov 2014<br />
-	              Nov 2013<br />
-	            </p>
+				<div id="volunteer-certs" className="row">
+					<div className="col-sm-3">
+	          <h3>Volunteer History</h3>
+            
+            <h4>TEDxPerth</h4>
+            <p>
+              Nov 2014<br />
+              Nov 2013<br />
+            </p>
 
-							<h4>Startup Weekend</h4>
-	            <p>
-	              Apr 2015 <em>Mentor</em><br />
-	              Nov 2014 <em>Organiser</em><br />
-	              Apr 2014 <em>Mentor</em><br />
-	              Nov 2013 <em>Mentor</em><br />
-	              Apr 2013 <em>Mentor</em><br />
-	            </p>
-		        </div>{/* .col-md-4 */}
+						<h4>Startup Weekend</h4>
+            <p>
+              Apr 2015 <em>Mentor</em><br />
+              Nov 2014 <em>Organiser</em><br />
+              Apr 2014 <em>Mentor</em><br />
+              Nov 2013 <em>Mentor</em><br />
+              Apr 2013 <em>Mentor</em><br />
+            </p>
+	        </div>{/* .col-md-4 */}
 
-						<div className="col-sm-4">
-		          <h3>Certifications</h3>
-							
-							<h4>Meros Language School</h4>
-	            <p>
-	              Completion of Japanese language course
-	            </p>
+					<div className="col-sm-4">
+	          <h3>Certifications</h3>
+						
+						<h4>Meros Language School</h4>
+            <p>
+              Completion of Japanese language course
+            </p>
 
-	            <h4>Yuh Mei Chinese School</h4>
-	            <p>
-	              Completion of Chinese language course
-	            </p>
-						</div>{/* .col-md-3 */}
+            <h4>Yuh Mei Chinese School</h4>
+            <p>
+              Completion of Chinese language course
+            </p>
+					</div>{/* .col-md-3 */}
 
-						<div className="col-sm-5">
-	            <h3>Personal Qualities</h3>
-		          <p>Hard working, goal-oriented, responsible, highly motivated and enthusiastic, as well as exerting an outgoing personality and confident in the approach of an unfamiliar problem.</p>
-	           </div>{/* .col-sm-4 */}
-					</div>{/* .row */}
-				</div>{/* .container */}
+					<div className="col-sm-5">
+            <h3>Personal Qualities</h3>
+	          <p>Hard working, goal-oriented, responsible, highly motivated and enthusiastic, as well as exerting an outgoing personality and confident in the approach of an unfamiliar problem.</p>
+           </div>{/* .col-sm-4 */}
+				</div>{/* .row */}
 			</section>
 		)
 	}

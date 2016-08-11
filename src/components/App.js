@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 window.jQuery = window.$ = $;
 require('bootstrap');
+require('../../node_modules/waypoints/lib/jquery.waypoints.js');
 require('../js/app.js');
 
 /**

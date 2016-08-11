@@ -16,4 +16,19 @@ $(document).ready(() => {
 			}
 		});
 	})
+
+	//progress bars
+	var $progressBar = $('.progress-bar');
+	$progressBar.css('width', 0);
+
+	//animate progress bar when it comes into view
+	var waypoints = $progressBar.waypoint(function(direction) {
+		$(this).each(function(indx) {
+			var el = $(this.element);
+			el.css("width", el.attr("aria-valuenow") + "%");
+		});
+	}, {
+		triggerOnce: true,
+		offset: 'bottom-in-view'
+	});
 });

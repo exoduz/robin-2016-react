@@ -37,28 +37,26 @@ class Skills extends React.Component {
 
 		return (
 			<section id="skills">
-				<div className="container">
-					<div className="row">
-						<div className="col-sm-4">
-							<h3>Programming</h3>
-							{ Object.keys(content.programming).map((id) => <ProgressBar key={ id } data={ content.programming[id] } />) }
-						</div>{/* .col-sm-4 */}
+				<div className="row">
+					<div className="col-sm-4">
+						<h3>Programming</h3>
+						{ Object.keys(content.programming).map((id) => <ProgressBar key={ id } data={ content.programming[id] } />) }
+					</div>{/* .col-sm-4 */}
 
-						<div className="col-sm-4">
-							<h3>Frameworks</h3>
-							{ Object.keys(content.frameworks).map((id) => <ProgressBar key={ id } data={ content.frameworks[id] } />) }
-						</div>{/* .col-sm-4 */}
+					<div className="col-sm-4">
+						<h3>Frameworks</h3>
+						{ Object.keys(content.frameworks).map((id) => <ProgressBar key={ id } data={ content.frameworks[id] } />) }
+					</div>{/* .col-sm-4 */}
 
-						<div className="col-sm-4">
-							<h3>Database</h3>
-							{ Object.keys(content.database).map((id) => <ProgressBar key={ id } data={ content.database[id] } />) }
+					<div className="col-sm-4">
+						<h3>Database</h3>
+						{ Object.keys(content.database).map((id) => <ProgressBar key={ id } data={ content.database[id] } />) }
 
-							<h3>Web Servers</h3>
-							{ Object.keys(content.webserver).map((id) => <ProgressBar key={ id } data={ content.webserver[id] } />) }
-						</div>{/* .col-sm-4 */}
+						<h3>Web Servers</h3>
+						{ Object.keys(content.webserver).map((id) => <ProgressBar key={ id } data={ content.webserver[id] } />) }
+					</div>{/* .col-sm-4 */}
 
-					</div>{/* .row */}
-				</div>{/* .container */}
+				</div>{/* .row */}
 			</section>
 		)
 	}
