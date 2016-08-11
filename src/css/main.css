@@ -227,6 +227,35 @@ h2.section-heading {
 .progress-label { font-weight: 700; text-align: right; }
 .progress-bar-container { padding-top: 6px; }
 .progress { height: 10px; }
+.progress-bar { background: #2980b9; }
+
+.progress-bar.html { width: 99%; }
+.progress-bar.css { width: 99%; }
+.progress-bar.php { width: 90%; }
+.progress-bar.js { width: 87%; }
+.progress-bar.csharp { width: 60%; }
+.progress-bar.mysql { width: 85%; }
+.progress-bar.sqlserver { width: 60%; }
+.progress-bar.react-js { width: 80%; }
+.progress-bar.cakephp { width: 95%; }
+.progress-bar.wordpress { width: 85%; }
+.progress-bar.dotnet { width: 60%; }
+.progress-bar.apache { width: 85%; }
+.progress-bar.nginx { width: 85%; }
+.progress-bar.iis { width: 75%; }
+.progress-bar.osx { width: 97%; }
+.progress-bar.windows { width: 95%; }
+.progress-bar.linux { width: 75%; }
+.progress-bar.office { width: 99%; }
+.progress-bar.sublime { width: 90%; }
+.progress-bar.adobe { width: 70%; }
+.progress-bar.visualstudio { width: 70%; }
+
+.progress-bar.english { width: 99%}
+.progress-bar.indonesian { width: 99%; }
+.progress-bar.japanese { width: 85%; }
+.progress-bar.mandarin { width: 70%; }
+.progress-bar.cantonese { width: 50%; }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.progress-label-container { padding-right: 15px; }

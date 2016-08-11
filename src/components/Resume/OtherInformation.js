@@ -6,11 +6,11 @@ class OtherInformation extends React.Component {
 	_content() {
 		var others = {
 			languages: {
-				lang1: { name: 'English', proficiency: 'Native', level: 99 },
-				lang2: { name: 'Indonesian', proficiency: 'Native', level: 99 },
-				lang3: { name: 'Japanese', proficiency: 'Business', level: 85 },
-				lang4: { name: 'Mandarin', proficiency: 'Conversational', level: 70 },
-				lang5: { name: 'Cantonese', proficiency: 'Conversational', level: 50 }
+				lang1: { name: 'English', proficiency: 'Native', class_name: 'english', level: 99 },
+				lang2: { name: 'Indonesian', proficiency: 'Native', class_name: 'indonesian', level: 99 },
+				lang3: { name: 'Japanese', proficiency: 'Business', class_name: 'japanese', level: 85 },
+				lang4: { name: 'Mandarin', proficiency: 'Conversational', class_name: 'mandarin', level: 70 },
+				lang5: { name: 'Cantonese', proficiency: 'Conversational', class_name: 'cantonese', level: 50 }
 			},
 			os: {
 				os1: { name: 'OSX', class_name: 'osx', level: 97 },
