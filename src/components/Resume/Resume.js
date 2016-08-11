@@ -1,6 +1,8 @@
 import React from 'react';
 
+import Skills from './Skills';
 import Entry from './Entry';
+import OtherInformation from './OtherInformation';
 
 class Resume extends React.Component {
 	_content() {
@@ -99,9 +101,13 @@ class Resume extends React.Component {
 			<section id="resume">
 				<h2 className="section-heading divider-after">What I can do</h2>
 
+				<Skills />
+
 				<div className="container">
 					{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
 				</div>{/* .container */}
+
+				<OtherInformation />
 			</section>
 		)
 	}

@@ -206,9 +206,38 @@ h2.section-heading {
 }
 
 /**
+	Skills
+*/
+#skills, #other-info { padding-bottom: 60px; font-size: 0.9rem; }
+#other-info { padding: 30px 0; }
+#skills h3, #other-info h3 { font-size: 1rem;  }
+#other-info h4 {
+	margin: 10px 0 0;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.progress-label-container { padding-right: 0; }
+.progress-label { font-weight: 700; text-align: right; }
+.progress-bar-container { padding-top: 6px; }
+.progress { height: 10px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.progress-label-container { padding-right: 15px; }
+	.progress-label { text-align: left; }
+	.progress { margin-bottom: 8px; }
+}
+
+@media (max-width: 767px) {
+	.progress-label-container { padding-right: 15px; }
+	.progress-label { text-align: left; }
+	.progress { margin-bottom: 8px; }
+}
+
+/**
 	Resume
 */
-#resume { padding: 30px 0; }
+#resume {}
 
 /**
 	Contact
