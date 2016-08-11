@@ -98,14 +98,16 @@ class Resume extends React.Component {
 		const content = this._content();
 
 		return (
-			<section id="resume">
+			<section id="work-history">
 				<h2 className="section-heading divider-after">What I can do</h2>
 
 				<Skills />
 
-				<div className="container">
-					{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
-				</div>{/* .container */}
+				<section id="resume">
+					<div className="container">
+						{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
+					</div>{/* .container */}
+				</section>{/* #resume */}
 
 				<OtherInformation />
 			</section>
