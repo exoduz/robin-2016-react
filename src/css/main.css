@@ -216,6 +216,7 @@ h2.section-heading {
 	font-size: 0.9rem;
 	font-weight: 700;
 }
+#volunteer-certs { padding-top: 30px; }
 
 .progress-label-container { padding-right: 0; }
 .progress-label { font-weight: 700; text-align: right; }

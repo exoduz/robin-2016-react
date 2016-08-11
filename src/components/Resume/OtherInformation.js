@@ -41,7 +41,7 @@ class OtherInformation extends React.Component {
 						</div>{/* .col-sm-4 */}
 
 						<div className="col-sm-4">
-							<h3>OS</h3>
+							<h3>Operating Systems</h3>
 							{ Object.keys(content.os).map((id) => <ProgressBar key={ id } data={ content.os[id] } />) }
 						</div>{/* .col-sm-4 */}
 
@@ -51,7 +51,7 @@ class OtherInformation extends React.Component {
 						</div>{/* .col-sm-4 */}
 					</div>{/* .row */}
 
-					<div className="row">
+					<div id="volunteer-certs" className="row">
 						<div className="col-sm-3">
 		          <h3>Volunteer History</h3>
 	            
