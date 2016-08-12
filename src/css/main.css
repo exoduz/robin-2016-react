@@ -281,7 +281,7 @@ h2.section-heading {
 .resume-entry h4 { font-size: 1.2rem; }
 .resume-entry h5 { font-size: 0.9rem; font-weight: 700; }
 .resume-entry p { font-size: 0.9rem; }
-.resume-details { padding: 20px 0; border-bottom: 1px solid #d6d6d6; }
+.resume-details { padding: 20px 15px; border-bottom: 1px solid #d6d6d6; }
 .resume-date h5 {
 	padding-top: 28px;
 	color: #777;
@@ -300,7 +300,7 @@ h2.section-heading {
 .toggle-resume {
 	position: absolute;
 	bottom: -35px;
-	right: 12px;
+	right: 10px;
 	padding: 5px 8px;
 	background: #fff;
 	color: #2980b9;
@@ -309,6 +309,11 @@ h2.section-heading {
 	cursor: pointer;
 }
 	.toggle-resume:hover { color: #54aff0; }
+
+@media (max-width: 767px) {
+	.resume-date h5 { padding-top: 0; text-align: left; }
+	.toggle-resume { display: none; }
+}
 
 /**
 	Contact

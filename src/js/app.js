@@ -1,8 +1,12 @@
 $(document).ready(() => {
+
 	const $toggleResume = $(".toggle-resume"),
 		$resumeDescription = $('.resume-description');
-
-	$resumeDescription.hide(); //hide resume description on first load
+		
+	//only hide when media query option is bigger than 767px
+	if (!Modernizr.mq('(max-width: 767px)')) {
+		$resumeDescription.hide(); //hide resume description on first load
+	}
 
 	$toggleResume.on("click", function(e) {
 		const $clickedButton = $(this);
@@ -14,7 +18,7 @@ $(document).ready(() => {
 				$clickedButton.text("less");
 			}
 		});
-	})
+	});
 
 	//progress bars
 	var $progressBar = $('.progress-bar');

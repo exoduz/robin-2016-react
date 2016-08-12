@@ -10,7 +10,7 @@ class Entry extends React.Component {
 		return(
 			<div className="resume-entry">
 				<div className="row clearfix">
-					<div className="col-sm-8 col-sm-push-2 resume-details">
+					<div className="col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 resume-details">
 						<div className="row">
 							<div className="col-sm-7 resume-title">
 								<h4>{ company }</h4>
