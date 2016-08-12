@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Skills from './Skills';
 import Entry from './Entry';
-import OtherInformation from './OtherInformation';
 
 class Resume extends React.Component {
 	_content() {
@@ -98,19 +96,10 @@ class Resume extends React.Component {
 		const content = this._content();
 
 		return (
-			<section id="work-history">
-				<div className="container">
-					<h2 className="section-heading divider-after">What I can do</h2>
+			<section id="resume">
+				<h3 className="text-center divider-after">Work History</h3>
 
-					<Skills />
-
-					<section id="resume">
-						<h3>Work History</h3>
-						{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
-					</section>{/* #resume */}
-
-					<OtherInformation />
-			</div>{/* .container */}
+				{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
 			</section>
 		)
 	}

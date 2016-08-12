@@ -15,7 +15,7 @@ class Hero extends React.Component {
 
 					<p className="links divider divider-before">
 						<a href="#projects">What I have worked on</a>
-						<a href="#resume">What I can do</a>
+						<a href="#skill-set">What I can do</a>
 						<a href="#contact">Say hi</a>
 					</p>{/* .links */}
 				</div>

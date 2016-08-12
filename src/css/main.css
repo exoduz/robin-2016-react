@@ -208,7 +208,7 @@ h2.section-heading {
 /**
 	Work History
 */
-#work-history { padding-top: 30px; }
+#skill-set { padding-top: 30px; }
 
 /**
 	Skills
@@ -272,7 +272,43 @@ h2.section-heading {
 /**
 	Resume
 */
-#resume {}
+#resume { margin-bottom: 30px; }
+.resume-entry h4,
+.resume-entry h5 {
+	margin: 0;
+	margin-bottom: 5px;
+}
+.resume-entry h4 { font-size: 1.2rem; }
+.resume-entry h5 { font-size: 0.9rem; font-weight: 700; }
+.resume-entry p { font-size: 0.9rem; }
+.resume-details { padding: 20px 0; border-bottom: 1px solid #d6d6d6; }
+.resume-date h5 {
+	padding-top: 28px;
+	color: #777;
+	text-align: right;
+}
+.resume-description .resume-location { margin-top: 20px; color: #777; font-weight: 700; }
+	.resume-description .resume-location::before {
+		content: "";
+		display: block;
+		width: 80px;
+		height: 1px;
+		margin: 15px 0 18px;
+		background: #d6d6d6;
+	}
+
+.toggle-resume {
+	position: absolute;
+	bottom: -35px;
+	right: 12px;
+	padding: 5px 8px;
+	background: #fff;
+	color: #2980b9;
+	font-size: 0.85rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+	.toggle-resume:hover { color: #54aff0; }
 
 /**
 	Contact
