@@ -273,6 +273,8 @@ h2.section-heading {
 	Resume
 */
 #resume { margin-bottom: 30px; }
+.resume-download { font-size: 0.9rem; font-weight: 700; }
+
 .resume-entry h4,
 .resume-entry h5 {
 	margin: 0;

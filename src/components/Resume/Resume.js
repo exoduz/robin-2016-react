@@ -98,6 +98,11 @@ class Resume extends React.Component {
 		return (
 			<section id="resume">
 				<h3 className="text-center divider-after">Work History</h3>
+				<p className="text-center resume-download">
+					<a href="assets/files/RobinRESUME.pdf" target="_blank">
+						<i className="fa fa-file-text-o"></i> Download my CV
+					</a>
+				</p>
 
 				{ Object.keys(content).map((id) => <Entry key={ id } data={ content[id] } />) }
 			</section>
