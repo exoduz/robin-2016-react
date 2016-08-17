@@ -35,8 +35,7 @@ class MyLocationMap extends React.Component {
 }
 
 MyLocationMap.defaultProps = {
-	//key: 'AIzaSyBGIscxtklKxt54v1-W-lsxI5_TuwGr75A',
-	key: '',
+	key: 'AIzaSyBGIscxtklKxt54v1-W-lsxI5_TuwGr75A',
   center: { lat: 37.8313, lng: -122.2852 }, //Emeryville
   currentLocation: { lat: 37.8700, lng: -122.2927 }, //Berkeley
   zoom: 11

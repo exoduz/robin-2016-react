@@ -22,12 +22,11 @@ require('../css/print.css');
 /**
  React components
 */
+import Nav from './Layout/Nav';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
 import SkillSet from './Resume/SkillSet';
 import Contact from './Contact/Contact';
-import MapContainer from './Map/MapContainer';
-import Thanks from './Thanks/Thanks';
 import Footer from './Layout/Footer';
 
 
@@ -35,12 +34,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
+				<Nav />
 				<Hero />
 				<Projects />
 				<SkillSet />
 				<Contact />
-				<MapContainer />
-				<Thanks />
 				<Footer />
 			</div>
 		)

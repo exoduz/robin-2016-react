@@ -5,7 +5,7 @@ import PersonalProjects from './PersonalProjects'
 class Projects extends React.Component {
 	render() {
 		return (
-			<section id="projects">
+			<section id="projects" className="sections">
 				<h2 className="section-heading divider-after">What I have worked on</h2>
 
 				<div className="container">

@@ -3,7 +3,7 @@ import React from 'react';
 class Hero extends React.Component {
 	render() {
 		return (
-			<section id="hero">
+			<section id="top" className="sections">
 				<div>
 					<h1>Robin Roy Julius</h1>
 					
@@ -21,7 +21,7 @@ class Hero extends React.Component {
 				</div>
 
 				<div className="scroll-for-more">
-					<a href="#projects"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
+					<a href="#projects" className="scroll-down"><i className="fa fa-long-arrow-down"></i> Would you like to know more?</a>
 				</div>{/* .scroll-for-more */}
 			</section>
 		)

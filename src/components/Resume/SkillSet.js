@@ -7,7 +7,7 @@ import OtherInformation from './OtherInformation';
 class SkillSet extends React.Component {
 	render() {
 		return (
-			<section id="skill-set">
+			<section id="skill-set" className="sections">
 				<div className="container">
 					<h2 className="section-heading divider-after">What I can do</h2>
 
