@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(() => {
 
 	const $toggleResume = $(".toggle-resume"),
 		$resumeDescription = $('.resume-description');
@@ -36,37 +36,37 @@ jQuery(document).ready(function($) {
 	});
 
 	//dot navigation
+	//https://codyhouse.co/gem/vertical-fixed-navigation/
 	var contentSections = $('.sections'),
 		navigationItems = $('#vertical-nav a');
 
 	updateNavigation();
-	$(window).on('scroll', function(){
+	$(window).on('scroll', function() {
 		updateNavigation();
 	});
 
 	//smooth scroll to sections from dot navigation
-	navigationItems.on('click', function(e){
+	navigationItems.on('click', function(e) {
     e.preventDefault();
     smoothScroll($(this.hash));
   });
   //smooth scroll to second section from hero
-  $('.scroll-down').on('click', function(e){
+  $('.scroll-down').on('click', function(e) {
     e.preventDefault();
     smoothScroll($(this.hash));
   });
-  /*
+  
   //open-close navigation on touch devices
-  $('.touch .cd-nav-trigger').on('click', function(){
-  	$('.touch #cd-vertical-nav').toggleClass('open');
-
+  $('.no-touch .nav-trigger').on('click', function() {
+  	$('.no-touch #vertical-nav').toggleClass('open');
   });
   //close navigation on touch devices when selectin an elemnt from the list
-  $('.touch #cd-vertical-nav a').on('click', function(){
-  	$('.touch #cd-vertical-nav').removeClass('open');
+  $('.no-touch #vertical-nav a').on('click', function() {
+  	$('.no-touch #vertical-nav').removeClass('open');
   });
-	*/
+
 	function updateNavigation() {
-		contentSections.each(function(){
+		contentSections.each(function() {
 			var $this = $(this);
 			var activeSection = $('#vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
 
