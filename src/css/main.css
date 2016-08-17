@@ -49,13 +49,7 @@ h2.section-heading {
 	Nav
 	https://codyhouse.co/gem/vertical-fixed-navigation/
 */
-.img-replace {
-  /* replace text with a background-image */
-  display: inline-block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-}
+#vertical-nav ul { padding-left: 0; }
 
 /* Non Touch devices */
 .nav-trigger {
@@ -113,7 +107,6 @@ h2.section-heading {
 	}
 .no-touch #vertical-nav .nav-dot {
   position: relative;
-  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 11px;
   height: 12px;
   width: 12px;
@@ -146,8 +139,15 @@ h2.section-heading {
   transform-origin: 100% 50%;
 }
 
-
 /* Touch devices */
+.img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
 .touch .nav-trigger {
   display: block;
   z-index: 2;
@@ -157,7 +157,7 @@ h2.section-heading {
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background: rgba(240, 240, 240, 0.8);
+  background: rgba(240, 240, 240, 0.95);
 }
 .touch .nav-trigger span {
   position: absolute;
@@ -175,21 +175,21 @@ h2.section-heading {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.touch .nav-trigger span::before, .touch .nav-trigger span::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  background-color: inherit;
-  border-radius: inherit;
-}
-.touch .nav-trigger span::before {
-  top: -9px;
-}
-.touch .nav-trigger span::after {
-  bottom: -9px;
-}
+	.touch .nav-trigger span::before, .touch .nav-trigger span::after {
+	  content: '';
+	  height: 100%;
+	  width: 100%;
+	  position: absolute;
+	  left: 0;
+	  background-color: inherit;
+	  border-radius: inherit;
+	}
+	.touch .nav-trigger span::before {
+	  top: -9px;
+	}
+	.touch .nav-trigger span::after {
+	  bottom: -9px;
+	}
 
 .touch #vertical-nav {
   position: fixed;
@@ -218,7 +218,7 @@ h2.section-heading {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
   border-radius: 0.25em;
-  background: rgba(240, 240, 240, 0.8);
+  background: rgba(240, 240, 240, 0.95);
 }
 .touch #vertical-nav a {
   display: block;
@@ -244,32 +244,32 @@ h2.section-heading {
 .touch #vertical-nav.open + .nav-trigger span {
   background-color: rgba(62, 57, 71, 0);
 }
-.touch #vertical-nav.open + .nav-trigger span::before, .touch #vertical-nav.open + .nav-trigger span::after {
-  background-color: #3e3947;
-  height: 3px;
-  width: 20px;
-  border-radius: 0;
-  left: -8px;
-}
-.touch #vertical-nav.open + .nav-trigger span::before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 1px;
-}
-.touch #vertical-nav.open + .nav-trigger span::after {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-  bottom: 0;
-}
-.touch #vertical-nav li:last-child a {
-  border-bottom: none;
-}
+	.touch #vertical-nav.open + .nav-trigger span::before, .touch #vertical-nav.open + .nav-trigger span::after {
+	  background-color: #3e3947;
+	  height: 3px;
+	  width: 20px;
+	  border-radius: 0;
+	  left: -8px;
+	}
+	.touch #vertical-nav.open + .nav-trigger span::before {
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  -o-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	  top: 1px;
+	}
+	.touch #vertical-nav.open + .nav-trigger span::after {
+	  -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+	  -ms-transform: rotate(135deg);
+	  -o-transform: rotate(135deg);
+	  transform: rotate(135deg);
+	  bottom: 0;
+	}
+	.touch #vertical-nav li:last-child a {
+	  border-bottom: none;
+	}
 
 @media only screen and (min-width: 768px) {
   .touch .nav-trigger, .touch #vertical-nav {
@@ -327,7 +327,10 @@ h2.section-heading {
 
 .scroll-for-more {
 	position: absolute;
+	left: 0;
+	right: 0;
 	bottom: 25px;
+	margin: 0 auto;
 	font-size: 0.8rem;
 }
 .scroll-for-more i { margin-right: 12px; }

@@ -57,12 +57,12 @@ $(document).ready(() => {
   });
   
   //open-close navigation on touch devices
-  $('.no-touch .nav-trigger').on('click', function() {
-  	$('.no-touch #vertical-nav').toggleClass('open');
+  $('.touch .nav-trigger').on('click', function() {
+  	$('.touch #vertical-nav').toggleClass('open');
   });
   //close navigation on touch devices when selectin an elemnt from the list
-  $('.no-touch #vertical-nav a').on('click', function() {
-  	$('.no-touch #vertical-nav').removeClass('open');
+  $('.touch #vertical-nav a').on('click', function() {
+  	$('.touch #vertical-nav').removeClass('open');
   });
 
 	function updateNavigation() {
